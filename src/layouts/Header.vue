@@ -80,9 +80,8 @@
                 <button
                     class="bg-[#3E5E31] text-white px-4 py-1 rounded-full text-sm xl:text-base hover:opacity-90 dark:bg-[#2B4724]">Get
                     Vaccinated</button>
-                <button
-                    class="bg-[#3E5E31] text-white px-4 py-1 rounded-full text-sm xl:text-base hover:opacity-90 dark:bg-[#2B4724]">Sign
-                    In</button>
+                <router-link to="/auth/login" class="bg-[#3E5E31] text-white px-4 py-1 rounded-full text-sm xl:text-base hover:opacity-90 dark:bg-[#2B4724]">Sign
+                    In</router-link>
             </div>
             <button class="lg:hidden" @click="toggleMobileMenu">
                 <i class="pi pi-bars text-2xl"></i>
@@ -122,8 +121,8 @@
             <div class="flex flex-wrap gap-2 mt-3">
                 <button class="bg-[#3E5E31] text-white px-4 py-1 rounded-full  text-base dark:bg-[#2B4724]">Get
                     Vaccinated</button>
-                <button class="bg-[#3E5E31] text-white px-4 py-1 rounded-full text-base dark:bg-[#2B4724]">Sign
-                    In</button>
+                <router-link to="/auth/login" class="bg-[#3E5E31] text-white px-4 py-1 rounded-full text-sm xl:text-base hover:opacity-90 dark:bg-[#2B4724]">Sign
+                    In</router-link>
             </div>
         </div>
     </header>
@@ -134,6 +133,7 @@ import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import DarkModeToggle from '@/layouts/DarkModeToggle.vue'
 import ServicesMegaMenu from '@/layouts/ServicesMegaMenu.vue'
+
 
 const route = useRoute()
 const mobileMenuOpen = ref(false)
