@@ -2,7 +2,7 @@
     <PageToolbar title="Create News Article" v-model:modelValue="search" :showSearch="false" :showView="true" :showExcel="false" :showAdd="false"
         @view="goBackToList" />
     
-    <div class="max-w-2xl mx-auto">
+    <div class="max-w-4xl mx-auto">
 
         <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
             <form @submit.prevent="createNews">

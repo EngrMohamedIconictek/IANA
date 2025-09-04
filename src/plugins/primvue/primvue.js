@@ -33,14 +33,16 @@ import Tab from 'primevue/tab';
 import TabPanels from 'primevue/tabpanels';
 import TabPanel from 'primevue/tabpanel';
 import InputGroup from 'primevue/inputgroup';
+import FloatLabel from 'primevue/floatlabel';
 import InputGroupAddon from 'primevue/inputgroupaddon';
+import FileUpload from 'primevue/fileupload';
+import Editor from 'primevue/editor';
+import ToggleButton from 'primevue/togglebutton';
 
 
 import PrimeVue from 'primevue/config';
-
 import Sidebar from 'primevue/sidebar';
 
-import PrimeTailwind from './presets/iconictek';
 import Aura from '@primeuix/themes/aura';
 
 import "primeicons/primeicons.css";
@@ -56,7 +58,6 @@ const primeVue = {
                 }
             },
             unstyled: false,
-            pt: PrimeTailwind,
             ripple: true,
             zIndex: {
                 modal: 1100,
@@ -108,7 +109,11 @@ const primeVue = {
         app.component('Toast', Toast);
         app.component('InputGroup', InputGroup);
         app.component('InputGroupAddon', InputGroupAddon);
+        app.component('FloatLabel', FloatLabel);
+        app.component('FileUpload', FileUpload);
+        app.component('Editor', Editor);
         app.component('Tag', Tag);
+        app.component('ToggleButton', ToggleButton);
 
 
         app.use(ToastService);

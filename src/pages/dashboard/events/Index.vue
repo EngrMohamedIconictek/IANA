@@ -1,6 +1,6 @@
 <template>
     <PageToolbar title="Upcoming Event List" v-model:modelValue="search" :showSearch="true" :showView="false" :showExcel="true"
-        createRoute="/create" />
+        createRoute="/dashboard/create" />
     <EventsRowCard :events="events" @delete="handleDeleteEvent" @edit="handleEditEvent" />
 
 </template>

@@ -239,7 +239,7 @@ const routes = [
         },
       },
       {
-        path: '/create',
+        path: 'create',
         component: () => import('@/pages/dashboard/events/Create.vue'),
         name: 'events-create',
         meta: {
@@ -248,16 +248,16 @@ const routes = [
         },
       },
       {
-        path: '/events',
+        path: 'events',
         component: () => import('@/pages/dashboard/events/Index.vue'),
-        name: 'events',
+        name: 'dashboard-events',
         meta: {
           auth: true,
           title: "Events",
         },
       },
       {
-        path: '/services',
+        path: 'services',
         component: () => import('@/pages/dashboard/services/Index.vue'),
         name: 'dashboard-services',
         meta: {
@@ -266,7 +266,7 @@ const routes = [
         },
       },
       {
-        path: '/services/create',
+        path: 'services/create',
         component: () => import('@/pages/dashboard/services/Create.vue'),
         name: 'services-create',
         meta: {
@@ -275,7 +275,97 @@ const routes = [
         },
       },
       {
-        path: '/news',
+        path: 'services/category',
+        component: () => import('@/pages/dashboard/services/CategoryList.vue'),
+        name: 'services-category',
+        meta: {
+          auth: true,
+          title: "Service Categories List",
+        },
+      },
+      {
+        path: 'services/create_category',
+        component: () => import('@/pages/dashboard/services/CreateCategory.vue'),
+        name: 'services-create-category',
+        meta: {
+          auth: true,
+          title: "Create Service Category",
+        },
+      },
+      {
+        path: 'services/category',
+        component: () => import('@/pages/dashboard/services/CategoryList.vue'),
+        name: 'services-category',
+        meta: {
+          auth: true,
+          title: "Service Categories List",
+        },
+      },
+      {
+        path: 'fatwas',
+        component: () => import('@/pages/dashboard/fatwas/Index.vue'),
+        name: 'fatwas',
+        meta: {
+          auth: true,
+          title: "Fatwas",
+        },
+      },
+      {
+        path: 'fatwas/categories',
+        component: () => import('@/pages/dashboard/fatwas/FatwaCategories.vue'),
+        name: 'fatwas-categories',
+        meta: {
+          auth: true,
+          title: "Fatwa Categories",
+        },
+      },
+      {
+        path: 'fatwas/hotline',
+        component: () => import('@/pages/dashboard/fatwas/FatwaHotline.vue'),
+        name: 'fatwas-hotline',
+        meta: {
+          auth: true,
+          title: "Fatwa Hotline",
+        },
+      },
+      {
+        path: 'sponsors',
+        component: () => import('@/pages/dashboard/sponsors/Index.vue'),
+        name: 'dashboard-sponsors',
+        meta: {
+          auth: true,
+          title: "Sponsors List",
+        },
+      },
+      {
+        path: 'sponsors/types',
+        component: () => import('@/pages/dashboard/sponsors/SponsorTypes.vue'),
+        name: 'sponsor-types',
+        meta: {
+          auth: true,
+          title: "Sponsor Types",
+        },
+      },
+      {
+        path: 'sponsors/form',
+        component: () => import('@/pages/dashboard/sponsors/SponsorForm.vue'),
+        name: 'sponsor-form',
+        meta: {
+          auth: true,
+          title: "Sponsor Form List",
+        },
+      },
+      {
+        path: 'sponsors/create',
+        component: () => import('@/pages/dashboard/sponsors/Create.vue'),
+        name: 'sponsors-create',
+        meta: {
+          auth: true,
+          title: "Add Sponsor",
+        },
+      },
+      {
+        path: 'news',
         component: () => import('@/pages/dashboard/news/Index.vue'),
         name: 'dashboard-news',
         meta: {
@@ -284,7 +374,25 @@ const routes = [
         },
       },
       {
-        path: '/news/create',
+        path: 'islam/5_pillar_islam',
+        component: () => import('@/pages/dashboard/islam/Index.vue'),
+        name: '5-pillar-islam',
+        meta: {
+          auth: true,
+          title: "5 Pillar List",
+        },
+      },
+      {
+        path: 'islam/6_pillar_islam',
+        component: () => import('@/pages/dashboard/islam/PillarIslam.vue'),
+        name: '6-pillar-islam',
+        meta: {
+          auth: true,
+          title: "6 Pillar List",
+        },
+      },
+      {
+        path: 'news/create',
         component: () => import('@/pages/dashboard/news/Create.vue'),
         name: 'news-create',
         meta: {
@@ -301,6 +409,15 @@ const routes = [
     meta: {
       auth: false,
       title: "Sign IN",
+    },
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    component: () => import('@/pages/notfound/NotFound.vue'),
+    name: 'NotFound',
+    meta: {
+      auth: false,
+      title: "Page Not Found - 404",
     },
   }
 ]

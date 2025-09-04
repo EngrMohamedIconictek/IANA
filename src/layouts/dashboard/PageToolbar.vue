@@ -71,7 +71,8 @@ const props = defineProps({
   showView: { type: Boolean, default: true },
   showExcel: { type: Boolean, default: true },
   showAdd: { type: Boolean, default: true },
-  createRoute: { type: String, default: '/create' }
+  createRoute: { type: String, default: '/create' },
+  useModal: { type: Boolean, default: false }
 })
 
 const emit = defineEmits<{
@@ -98,6 +99,8 @@ function onSearch() {
 
 function handleAdd() {
   emit('add')
-  router.push(props.createRoute)
+  if (!props.useModal) {
+    router.push(props.createRoute)
+  }
 }
 </script>

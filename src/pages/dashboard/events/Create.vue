@@ -1,7 +1,9 @@
 <template>
     <PageToolbar title="Events Add" v-model:modelValue="search" :showSearch="false" :showView="true" :showExcel="false" :showAdd="false"
         @view="goBackToList" />
-    <EventForm />
+    <div class="max-w-4xl mx-auto">
+        <EventForm />
+    </div>
 </template>
 
 <script setup>
@@ -14,7 +16,7 @@ const router = useRouter()
 const search = ref('')
 
 const goBackToList = () => {
-    router.push('/events')
+    router.push('/dashboard/events')
 }
 
 </script>

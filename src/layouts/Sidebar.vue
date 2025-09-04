@@ -16,7 +16,7 @@
                 <i :class="collapsed ? 'pi pi-angle-right text-3xl' : 'pi pi-angle-left text-3xl'"></i>
             </button>
             <button
-                class="md:hidden inline-flex items-center justify-center w-8 h-8 bg-green-500/20 hover:bg-green-300/20 dark:hover:bg-gray-700"
+                class="md:hidden inline-flex items-center justify-center w-8 h-8 text-white bg-green-500/20 hover:bg-green-300/20 dark:hover:bg-gray-700"
                 @click="closeMobile" aria-label="Close sidebar">
                 <i class="pi pi-times"></i>
             </button>
@@ -57,6 +57,7 @@
                     <div v-if="openSubmenu === item.label" class=" mt-1 rounded bg-white dark:bg-gray-900"
                         v-show="!collapsed || mobileOpen">
                         <router-link v-for="child in item.children" :key="child.label" :to="child.to"
+                            @click="handleMenuClick"
                             class="flex items-center gap-2 py-1.5 pl-5 px-3   hover:bg-green-200 hover:text-green-800 dark:hover:bg-gray-950 rounded text-green-700"
                             :class="{ 'bg-[#C2692A] dark:bg-gray-950 hover:text-green-700 rounded text-white': $route.path === child.to }">
                             <i
@@ -115,6 +116,10 @@ const logout = () => {
 
 const handleMenuClick = () => {
     openSubmenu.value = null
+    // Close mobile sidebar when menu item is clicked
+    if (window.innerWidth < 768) { // md breakpoint
+        closeMobile()
+    }
 }
 
 const handleClickOutside = (event) => {
@@ -159,14 +164,140 @@ const menu = [
             {
                 type: 'link',
                 label: 'Create Events',
-                to: '/create',
+                to: '/dashboard/create',
                 icon: 'iconoir-calendar',
             },
             {
                 type: 'link',
                 label: 'Upcoming Events',
-                to: '/events',
+                to: '/dashboard/events',
                 icon: 'iconoir-calendar',
+            }
+        ]
+    },
+    {
+        type: 'submenu',
+        label: 'Services',
+        icon: 'iconoir-settings',
+        children: [
+            {
+                type: 'link',
+                label: 'Add Services',
+                to: '/dashboard/services/create',
+                icon: 'iconoir-settings',
+            },
+            {
+                type: 'link',
+                label: 'Services List',
+                to: '/dashboard/services',
+                icon: 'iconoir-settings',
+            },
+            {
+                type: 'link',
+                label: 'Add Category',
+                to: '/dashboard/services/create_category',
+                icon: 'iconoir-settings',
+            },
+            {
+                type: 'link',
+                label: 'Category List',
+                to: '/dashboard/services/category',
+                icon: 'iconoir-settings',
+            }
+        ]
+    },
+    {
+        type: 'submenu',
+        label: 'Fatwa',
+        icon: 'iconoir-book',
+        children: [
+            {
+                type: 'link',
+                label: 'Fatwa List',
+                to: '/dashboard/fatwas',
+                icon: 'iconoir-book',
+            },
+            {
+                type: 'link',
+                label: 'Fatwa Categories',
+                to: '/dashboard/fatwas/categories',
+                icon: 'iconoir-book',
+            },
+            {
+                type: 'link',
+                label: 'Fatwa Hotline',
+                to: '/dashboard/fatwas/hotline',
+                icon: 'iconoir-book',
+            }
+        ]
+    },
+    {
+        type: 'submenu',
+        label: 'Sponsors',
+        icon: 'pi pi-chart-bar',
+        children: [
+            {
+                type: 'link',
+                label: 'Add Sponsors',
+                to: '/dashboard/sponsors/create',
+                icon: 'pi pi-chart-bar',
+            },
+            {
+                type: 'link',
+                label: 'Sponsors List',
+                to: '/dashboard/sponsors',
+                icon: 'pi pi-chart-bar',
+            },
+            {
+                type: 'link',
+                label: 'Sponsor Types',
+                to: '/dashboard/sponsors/types',
+                icon: 'pi pi-chart-bar',
+            },
+            {
+                type: 'link',
+                label: 'Sponsor Form ',
+                to: '/dashboard/sponsors/form',
+                icon: 'pi pi-chart-bar',
+            },
+            
+        ]
+    },
+    {
+        type: 'submenu',
+        label: 'Islam',
+        icon: 'pi pi-th-large',
+        children: [
+            {
+                type: 'link',
+                label: '5 Pillar List',
+                to: '/dashboard/islam/5_pillar_islam',
+                icon: 'pi pi-list-check',
+            },
+            {
+                type: 'link',
+                label: '6 Pillar List',
+                to: '/dashboard/islam/6_pillar_islam',
+                icon: 'pi pi-list-check',
+            }
+        ]
+    },
+    {
+        type: 'submenu',
+        label: 'News',
+        icon: 'pi pi-copy',
+        children: [
+            {
+                type: 'link',
+                label: 'News List',
+                to: '/dashboard/news',
+                icon: 'pi pi-copy',
+            },
+            {
+                type: 'link',
+                label: 'Add List',
+                to: '/dashboard/news/create',
+                icon: 'pi pi-copy',
             }
         ]
     },

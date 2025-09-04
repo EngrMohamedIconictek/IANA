@@ -73,7 +73,7 @@ const servicesColumns = [
     },
     {
         links: [],
-        specialButton: { text: "Zakat Calculation", url: "/zakat-calculation" }
+        specialButton: { text: "Zakat Calculation", url: "/" }
     }
 ];
 </script>
