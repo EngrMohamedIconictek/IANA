@@ -39,7 +39,7 @@
             <router-link to="/" class="flex items-center gap-2">
                 <img src="/logo.png" alt="IANA Logo" class="h-18">
             </router-link>
-            <nav class="hidden lg:flex items-center gap-7 font-medium bg-[#EBF8E5] dark:bg-slate-900 text-sm xl:text-base py-1.5 px-4 rounded-full">
+            <nav class="hidden lg:flex items-center lg:gap-5 xl:gap-7 font-medium bg-[#EBF8E5] dark:bg-slate-900 text-sm xl:text-base py-1.5 px-4 rounded-full">
                 <router-link to="/" class="hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">Home</router-link>
                 <div class="relative group">
                     <div class="flex items-center gap-1">
