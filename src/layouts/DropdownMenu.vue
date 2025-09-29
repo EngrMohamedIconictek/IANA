@@ -3,19 +3,19 @@
         <!-- Button -->
         <button class="text-gray-800 dark:text-white flex items-center gap-1.5" @click.stop="toggleDropdown">
             {{ label }}
-            <IconoirProvider icon="nav-arrow-down-solid" class="text-xs mt-1 font-semibold" />
+            <i class="iconoir-nav-arrow-down-solid text-xs mt-1 font-semibold"></i>
         </button>
         <div v-if="!mobile && isOpen"
-            class="absolute left-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded shadow-lg py-2 z-50">
+            class="absolute left-0 mt-2 w-64 bg-[#EBF8E5] dark:bg-slate-900 rounded shadow-lg py-2 z-50">
             <router-link v-for="(item, index) in items" :key="index" :to="item.path"
-                class="block px-4 py-2 text-lg font-normal text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                class="block px-4 py-2 text-base font-normal text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
                 @click="closeDropdown">
                 {{ item.name }}
             </router-link>
         </div>
         <div v-if="mobile && isOpen" class="mt-2 pl-4">
             <router-link v-for="(item, index) in items" :key="index" :to="item.path"
-                class="block py-2 text-lg font-normal text-gray-800 dark:text-white" @click="closeDropdown">
+                class="block py-2 text-base font-normal text-gray-800 dark:text-white" @click="closeDropdown">
                 {{ item.name }}
             </router-link>
         </div>

@@ -197,12 +197,12 @@ const routes = [
         },
       },
       {
-        path: '/news',
-        component: () => import('@/pages/forntend/news/Index.vue'),
-        name: 'news',
+        path: '/announcements',
+        component: () => import('@/pages/forntend/announcements/Index.vue'),
+        name: 'announcements',
         meta: {
           auth: false,
-          title: "News",
+          title: "Announcements",
         },
       },
       {

@@ -1,6 +1,6 @@
 <template>
     <HeroSection />
-    <LatestNews />
+    <LatestAnnouncement />
     <AboutHomeSection />
     <ServiceHome />
     <EventSection />
@@ -9,7 +9,7 @@
 
 <script setup>
 import HeroSection from '@/components/forntend/home/HeroSection.vue';
-import LatestNews from '@/components/forntend/home/LatestNews.vue';
+import LatestAnnouncement from '@/components/forntend/home/LatestAnnouncement.vue';
 import AboutHomeSection from '@/components/forntend/home/AboutHomeSection.vue';
 import ServiceHome from '@/components/forntend/home/ServiceHome.vue';
 import EventSection from '@/components/forntend/home/EventSection.vue';

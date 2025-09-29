@@ -58,20 +58,8 @@
                     </div>
                 </div>
                 <router-link to="/fatwas" class="hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">Fatwas</router-link>
-                <div class="relative group">
-                    <div class="flex items-center gap-1">
-                        <router-link to="/services" class="hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">
-                            Services
-                        </router-link>
-                        <button class="flex items-center gap-1 hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">
-                            <i class="pi pi-angle-down text-sm xl:text-base mt-1"></i>
-                        </button>
-                    </div>
-                    <div class="hidden group-hover:block">
-                        <ServicesMegaMenu />
-                    </div>
-                </div>
-                <router-link to="/news" class="hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">News</router-link>
+                <DropdownMenu label="Services" :items="servicesLinks" v-model="activeDropdown" class="font-normal" />
+                <router-link to="/announcements" class="hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">Announcement</router-link>
                 <router-link to="/events" class="hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">Events</router-link>
                 <router-link to="/" class="hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">Donate</router-link>
                 <router-link to="/contactus" class="hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">Contact Us</router-link>
@@ -79,7 +67,7 @@
             <div class="hidden lg:flex gap-2">
                 <button
                     class="bg-[#3E5E31] text-white px-4 py-1 rounded-full text-sm xl:text-base hover:opacity-90 dark:bg-[#2B4724]">Get
-                    Vaccinated</button>
+                    Contribute</button>
                 <router-link to="/auth/login" class="bg-[#3E5E31] text-white px-4 py-1 rounded-full text-sm xl:text-base hover:opacity-90 dark:bg-[#2B4724]">Sign
                     In</router-link>
             </div>
@@ -103,24 +91,14 @@
                 </div>
             </div>
             <router-link to="/fatwas" class="block">Fatwas</router-link>
-            <div>
-                <div class="flex items-center justify-between w-full">
-                    <router-link to="/services" class="flex-1">Services</router-link>
-                    <button @click="toggleDropdown('services')" class="flex items-center justify-center w-8">
-                        <i :class="['pi', activeDropdown === 'services' ? 'pi-angle-up' : 'pi-angle-down']"></i>
-                    </button>
-                </div>
-                <div v-if="activeDropdown === 'services'" class="pl-4">
-                    <ServicesMegaMenu />
-                </div>
-            </div>
-            <router-link to="/news" class="block">News</router-link>
+            <DropdownMenu label="Services" :items="servicesLinks" v-model="activeDropdown" class="font-medium" />
+            <router-link to="/announcements" class="block">Announcement</router-link>
             <router-link to="/events" class="block">Events</router-link>
             <router-link to="/" class="block">Donate</router-link>
             <router-link to="/contactus" class="block">Contact Us</router-link>
             <div class="flex flex-wrap gap-2 mt-3">
                 <button class="bg-[#3E5E31] text-white px-4 py-1 rounded-full  text-base dark:bg-[#2B4724]">Get
-                    Vaccinated</button>
+                    Contribute</button>
                 <router-link to="/auth/login" class="bg-[#3E5E31] text-white px-4 py-1 rounded-full text-sm xl:text-base hover:opacity-90 dark:bg-[#2B4724]">Sign
                     In</router-link>
             </div>
@@ -133,6 +111,7 @@ import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import DarkModeToggle from '@/layouts/DarkModeToggle.vue'
 import ServicesMegaMenu from '@/layouts/ServicesMegaMenu.vue'
+import DropdownMenu from '@/layouts/DropdownMenu.vue'
 
 
 const route = useRoute()
@@ -159,5 +138,16 @@ const aboutLinks = [
     { name: 'Volunteer', path: '/volunteer' },
     { name: 'Membership', path: '/' },
     { name: 'IANA Videos', path: '/iana_videos' }
+]
+
+const servicesLinks = [
+  { name: 'Dawa Activities', path: '/dawaactivity' },
+  { name: 'IANA Youth Services', path: '/' },
+  { name: 'Health Awareness', path: '/healthawareness' },
+  { name: 'IANA General Assembly', path: '/' },
+  { name: 'Family & business counseling', path: '/family-business-counseling' },
+  { name: 'IANA Banquet', path: '/ianaannualbanquet' },
+  { name: 'Civic Engagement', path: '/civicsengagement' },
+  { name: 'Press Release', path: '/pressrelease' }
 ]
 </script>

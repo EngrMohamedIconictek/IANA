@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white text-[#4A4A4A] dark:bg-slate-900 text-lg dark:text-white" >
+  <div class="bg-white text-[#4A4A4A] dark:bg-slate-900 text-lg dark:text-white " >
     <Header />
     <router-view />
     <Footer />
