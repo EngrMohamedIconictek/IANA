@@ -1,6 +1,6 @@
 <template>
     <div class="w-full px-2 py-5 sm:py-10 dark:bg-slate-900">
-        <div class="container mx-auto space-y-5">
+        <div class="container mx-auto space-y-5 px-4 sm:px-6 lg:px-8">
             <div class="space-y-3">
                 <h2 class="text-xl sm:text-3xl leading-relaxed text-[#3F642E] font-semibold">Health Awareness</h2>
                 <p class="leading-relaxed mb-2">The Islamic Association of North America (IANA) is a non-profit organization that provides Religious, social justice, support services, education, and youth development to a network of mosques nationally. We are a nationwide umbrella organization with over thirty-five centers and organizations. In Minnesota alone, we have about 15 Islamic organizations.</p>                

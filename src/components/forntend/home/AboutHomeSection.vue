@@ -5,7 +5,7 @@
     sm:bg-[linear-gradient(270.05deg,rgba(255,240,229,0)_0.04%,#FFF0E5_35%,#FFF0E5_99.95%),url('/images/abt-bg.png')] 
     sm:dark:bg-[linear-gradient(270.05deg,rgba(15,23,42,0)_0.04%,rgb(15,23,42)_35%,rgb(15,23,42)_99.95%),url('/images/abt-bg.png')] 
     bg-no-repeat sm:bg-right sm:bg-contain">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
                 <div class="space-y-3">
                     <h2 class="text-3xl font-semibold text-[#3F642E]">About Us</h2>

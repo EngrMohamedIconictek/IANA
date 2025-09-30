@@ -1,6 +1,6 @@
 <template>
     <div class="w-full px-2 py-5 sm:py-10 bg-[#EBF8E5] dark:bg-slate-950 my-2">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-5">
                 <h2 class="text-2xl sm:text-4xl font-semibold text-[#3F642E]">Services</h2>
             </div>

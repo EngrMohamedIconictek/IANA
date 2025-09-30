@@ -44,12 +44,12 @@ const routes = [
         },
       },
       {
-        path: '/fatwas',
+        path: '/fatwa',
         component: () => import('@/pages/forntend/fatwas/Index.vue'),
-        name: 'fatwas',
+        name: 'fatwa',
         meta: {
           auth: false,
-          title: "Fatwas",
+          title: "Fatwa",
         },
       },
       {

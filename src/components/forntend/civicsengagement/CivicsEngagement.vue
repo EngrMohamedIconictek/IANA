@@ -1,6 +1,6 @@
 <template>
     <div class="w-full px-2 py-5 sm:py-10 dark:bg-slate-900">
-        <div class="container mx-auto space-y-5">
+        <div class="container mx-auto space-y-5 px-4 sm:px-6 lg:px-8">
             <div class="space-y-3">
                 <h2 class="text-xl sm:text-3xl leading-relaxed text-[#3F642E] font-semibold">Civics Engagement</h2>
                 <p class="leading-relaxed mb-2">IANA partnered with Faith in MN in order to engage the local community

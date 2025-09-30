@@ -1,6 +1,6 @@
 <template>
     <div class="w-full px-2 py-5 sm:py-10 dark:bg-slate-900">
-        <div class="container mx-auto space-y-5">
+        <div class="container mx-auto space-y-5 px-4 sm:px-6 lg:px-8">
             <div class="space-y-3">
                 <h2 class="text-xl sm:text-3xl leading-relaxed text-[#3F642E] font-semibold">IANA RELIEF</h2>
                 <p class="leading-relaxed mb-2">IANA Relief: IANA pushes for not only supporting the local community but the communities we have back home. In any case of relief and aid, IANA is willing to help support our people when they need it most. In the past decade, IANA has raised over 5 million dollars in aid and funding.</p>

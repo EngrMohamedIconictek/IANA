@@ -1,6 +1,6 @@
 <template>
     <div class="w-full px-2 py-5 sm:py-10 dark:bg-slate-900">
-        <div class="container mx-auto ">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-5 text-center space-y-4">
                     <div >

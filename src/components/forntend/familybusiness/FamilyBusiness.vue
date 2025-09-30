@@ -1,6 +1,6 @@
 <template>
     <div class="w-full px-2 py-5 sm:py-10 dark:bg-slate-900">
-        <div class="container mx-auto ">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
                 <div class="space-y-4">
                     <h2 class="text-2xl sm:text-3xl font-semibold text-[#3F642E]">Family & Business Counseling</h2>

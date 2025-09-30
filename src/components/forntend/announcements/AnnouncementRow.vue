@@ -1,6 +1,6 @@
 <template>
     <div class="w-full px-2 py-5 sm:py-10 dark:bg-slate-900">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div v-for="(item, index) in news" :key="index"
                     class="border-2 rounded border-[#99B88B] bg-white dark:bg-slate-950 p-2 space-y-3 transition-all duration-500 hover:scale-105 cursor-pointer">

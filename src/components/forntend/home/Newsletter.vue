@@ -1,6 +1,6 @@
 <template>
     <div class="w-full p-6 sm:p-10 bg-[#C2692B] dark:bg-slate-900 mb-2">
-        <div class="container mx-auto  space-y-5">
+        <div class="container mx-auto  space-y-5 px-4 sm:px-6 lg:px-8">
             <h3 class="text-center text-3xl text-white font-semibold">Newsletter</h3>
             <div class="flex flex-col justify-center items-center space-y-3">
                 <div class="flex flex-wrap gap-3 w-full max-w-md items-center">

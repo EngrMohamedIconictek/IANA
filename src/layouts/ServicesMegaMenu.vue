@@ -3,7 +3,7 @@
         <!-- Desktop Mega Menu -->
         <div
             class="hidden md:block fixed left-0 right-0 top-[90px] bg-[#EBF8E5] dark:bg-gray-900 shadow-xl p-4 md:p-6 w-full z-1">
-            <div class="container mx-auto">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
                     <div v-for="(column, columnIndex) in servicesColumns" :key="columnIndex"
                         class="space-y-3 col-span-1">

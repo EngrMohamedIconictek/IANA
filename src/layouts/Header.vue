@@ -57,7 +57,7 @@
                             }}</router-link>
                     </div>
                 </div>
-                <router-link to="/fatwas" class="hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">Fatwas</router-link>
+                <router-link to="/fatwa" class="hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">Fatwas</router-link>
                 <DropdownMenu label="Services" :items="servicesLinks" v-model="activeDropdown" class="font-normal" />
                 <router-link to="/announcements" class="hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">Announcement</router-link>
                 <router-link to="/events" class="hover:text-[#3E5E31] dark:hover:text-[#A3D9A5]">Events</router-link>
@@ -90,7 +90,7 @@
                         class="block py-1 hover:bg-gray-100 dark:hover:bg-gray-700">{{ item.name }}</router-link>
                 </div>
             </div>
-            <router-link to="/fatwas" class="block">Fatwas</router-link>
+            <router-link to="/fatwa" class="block">Fatwas</router-link>
             <DropdownMenu label="Services" :items="servicesLinks" v-model="activeDropdown" class="font-medium" />
             <router-link to="/announcements" class="block">Announcement</router-link>
             <router-link to="/events" class="block">Events</router-link>
@@ -110,7 +110,6 @@
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import DarkModeToggle from '@/layouts/DarkModeToggle.vue'
-import ServicesMegaMenu from '@/layouts/ServicesMegaMenu.vue'
 import DropdownMenu from '@/layouts/DropdownMenu.vue'
 
 

@@ -1,6 +1,6 @@
 <template>
     <div class="w-full px-2 py-5 sm:py-10 dark:bg-slate-900">
-        <div class="container mx-auto space-y-5">
+        <div class="container mx-auto space-y-5 px-4 sm:px-6 lg:px-8">
             <div class="space-y-3">
                 <h2 class="text-xl sm:text-3xl leading-relaxed text-[#3F642E] font-semibold">Da'wa Activity</h2>
                 <p class="leading-relaxed mb-2">Da'wah: IANA Islamic Association of North America (IANA) was founded in the year of 2001 to meet the religious and social needs of Muslim societies in North America. As a response to the changing realities of Muslim communities, IANA re-positions itself to effectively reach diverse Muslim communities across the country.</p>

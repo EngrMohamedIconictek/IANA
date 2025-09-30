@@ -1,6 +1,6 @@
 <template>
     <div class="w-full px-2 py-5 sm:py-10 dark:bg-slate-900">
-        <div class="container mx-auto space-y-5">
+        <div class="container mx-auto space-y-5 px-4 sm:px-6 lg:px-8">
             <div class="space-y-3">
                 <h2 class="text-xl sm:text-3xl leading-relaxed text-[#3F642E] font-semibold">COVID-19</h2>
                 <p class="leading-relaxed mb-2">COVID-19:  During the COVID-19 pandemic IANA has raised awareness and delivered detailed information regarding the virus and resources for those who have been affected by it. IANA partnered with MDH to best serve the Somali and Muslim community at large. By partnering with MDH, IANA has set up a COVID-19 hotline where the community can call and ask questions pertaining to finding a COVID-19 testing site, rental and food assistance, and any other resources. Mosques and Islamic organizations were closed during the peak of COVID-19 to ensure everyone’s safety.</p>

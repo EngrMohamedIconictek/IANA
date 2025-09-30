@@ -1,6 +1,6 @@
 <template>
     <div class="w-full px-2 py-5 sm:py-10 dark:bg-slate-900">
-        <div class="container mx-auto space-y-5">
+        <div class="container mx-auto space-y-5 px-4 sm:px-6 lg:px-8">
             <div class="space-y-3">
                 <h2 class="text-xl sm:text-3xl leading-relaxed text-[#3F642E] font-semibold">Islamic Holidays</h2>
                 <p class="leading-relaxed mb-2">As a faith organization part of our job is to keep the public informed and updated on things such as holiday announcements. After the scholars meet together and come to a unanimous decision, using accurate Islamic guidelines, they will then issue an announcement via Facebook, mass emailing and mass phone calling. For example, when the moon is spotted and Ramadan is completed, we will send out flyers such as the one down below to let the people know that we are no longer fasting and will be celebrating Eid.</p>
