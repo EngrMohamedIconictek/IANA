@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto mb-10">
+        <div class="container mx-auto mb-10  px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
                 <div v-for="testimonial in testimonials" :key="testimonial.id" class="bg-[#EBF8E5]  text-center space-y-3 dark:bg-slate-900 p-8 rounded">
                     <h3 class="text-2xl font-semibold  text-[#3F642E]">{{ testimonial.center }}</h3>
