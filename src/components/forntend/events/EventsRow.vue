@@ -20,9 +20,9 @@
                         {{ item.description }}
                     </p>
 
-                    <a :href="item.link" class="text-base text-[#3F642E] underline font-medium">
+                    <router-link :to="`/events/${item.id}`" class="text-base text-[#3F642E] underline font-medium">
                         Read More
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -34,112 +34,85 @@
 
 const newsList = [
     {
+        id: 1,
         image: "/images/events-1.png",
         date: "27-Feb-2025",
         time: "06:30 PM to 08:00 PM",
         title: "Health Through Knowledge - Immunization & the Islamic Perspective",
         description:
             "Health Through Knowledge Immunization & the Islamic Perspective Guest Speakers...",
-        link: "#"
     },
     {
+        id: 2,
         image: "/images/events-2.png",
         date: "05-Mar-2025",
         time: "02:00 PM to 03:30 PM",
         title: "Healthy Ramadan, Healthy you",
         description:
             "Healthy Ramadan, Healthy you A guide to health and Nutrition in Ramadan! Nurse Abdirahman Abdi",
-        link: "#"
     },
     {
+        id: 3,
         image: "/images/events-3.png",
         date: "05-Mar-2025",
         time: "02:00 PM to 03:30 PM",
         title: "Family Vaccine Clinic- FEB 22",
         description:
-            "Family Vaccine Clinic Mobile Health Clinic is back to service you: Blood pressure and diabetes testing. Many other over-the-counter medications...",
-        link: "#"
+            "Family Vaccine Clinic Mobile Health Clinic is back to service you: Blood pressure and diabetes testing. Many other over-the-counter medications, such pain relievers and acid reflux medications...",
     },
     {
+        id: 1,
         image: "/images/events-1.png",
         date: "27-Feb-2025",
         time: "06:30 PM to 08:00 PM",
         title: "Health Through Knowledge - Immunization & the Islamic Perspective",
         description:
             "Health Through Knowledge Immunization & the Islamic Perspective Guest Speakers...",
-        link: "#"
     },
     {
+        id: 2,
         image: "/images/events-2.png",
         date: "05-Mar-2025",
         time: "02:00 PM to 03:30 PM",
         title: "Healthy Ramadan, Healthy you",
         description:
             "Healthy Ramadan, Healthy you A guide to health and Nutrition in Ramadan! Nurse Abdirahman Abdi",
-        link: "#"
     },
     {
+        id: 3,
         image: "/images/events-3.png",
         date: "05-Mar-2025",
         time: "02:00 PM to 03:30 PM",
         title: "Family Vaccine Clinic- FEB 22",
         description:
-            "Family Vaccine Clinic Mobile Health Clinic is back to service you: Blood pressure and diabetes testing. Many other over-the-counter medications...",
-        link: "#"
+            "Family Vaccine Clinic Mobile Health Clinic is back to service you: Blood pressure and diabetes testing. Many other over-the-counter medications, such pain relievers and acid reflux medications...",
     },
     {
+        id: 1,
         image: "/images/events-1.png",
         date: "27-Feb-2025",
         time: "06:30 PM to 08:00 PM",
         title: "Health Through Knowledge - Immunization & the Islamic Perspective",
         description:
             "Health Through Knowledge Immunization & the Islamic Perspective Guest Speakers...",
-        link: "#"
     },
     {
+        id: 2,
         image: "/images/events-2.png",
         date: "05-Mar-2025",
         time: "02:00 PM to 03:30 PM",
         title: "Healthy Ramadan, Healthy you",
         description:
             "Healthy Ramadan, Healthy you A guide to health and Nutrition in Ramadan! Nurse Abdirahman Abdi",
-        link: "#"
     },
     {
+        id: 3,
         image: "/images/events-3.png",
         date: "05-Mar-2025",
         time: "02:00 PM to 03:30 PM",
         title: "Family Vaccine Clinic- FEB 22",
         description:
-            "Family Vaccine Clinic Mobile Health Clinic is back to service you: Blood pressure and diabetes testing. Many other over-the-counter medications...",
-        link: "#"
-    },
-    {
-        image: "/images/events-1.png",
-        date: "27-Feb-2025",
-        time: "06:30 PM to 08:00 PM",
-        title: "Health Through Knowledge - Immunization & the Islamic Perspective",
-        description:
-            "Health Through Knowledge Immunization & the Islamic Perspective Guest Speakers...",
-        link: "#"
-    },
-    {
-        image: "/images/events-2.png",
-        date: "05-Mar-2025",
-        time: "02:00 PM to 03:30 PM",
-        title: "Healthy Ramadan, Healthy you",
-        description:
-            "Healthy Ramadan, Healthy you A guide to health and Nutrition in Ramadan! Nurse Abdirahman Abdi",
-        link: "#"
-    },
-    {
-        image: "/images/events-3.png",
-        date: "05-Mar-2025",
-        time: "02:00 PM to 03:30 PM",
-        title: "Family Vaccine Clinic- FEB 22",
-        description:
-            "Family Vaccine Clinic Mobile Health Clinic is back to service you: Blood pressure and diabetes testing. Many other over-the-counter medications...",
-        link: "#"
+            "Family Vaccine Clinic Mobile Health Clinic is back to service you: Blood pressure and diabetes testing. Many other over-the-counter medications, such pain relievers and acid reflux medications...",
     },
 ];
 

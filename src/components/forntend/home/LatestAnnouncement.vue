@@ -29,10 +29,10 @@
 
                     <p>{{ item.description }}</p>
 
-                    <a :href="item.link"
+                    <router-link :to="`/announcement/${item.id}`"
                         class="btn text-[#3F642E] hover:text-[#99B88B] dark:text-[#99B88B] underline font-semibold">
                         Read More
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -44,31 +44,31 @@ import { ref } from "vue";
 
 const news = ref([
     {
+        id: 1,
         image: "/images/news-1.png",
         category: "Ramadan",
         date: "08-13-2025",
         title: "Crescent of Ramadan announcement (IANA) 1446",
         description:
             "February 28, 2025, Statement of the Islamic Association of North America (IANA) regarding the beginning of Ramadan in the year 1446 AH..",
-        link: "#",
     },
     {
+        id: 2,
         image: "/images/news-2.png",
         category: "Electing New Leadership",
         date: "08-15-2025",
         title: "IANA General Assembly 2024: Electing New Leadership to Drive Reform and Progress",
         description:
             "Columbus, Ohio – November 23, 2024 – The Islamic Association of North America (IANA) held..",
-        link: "#",
     },
     {
+        id: 3,
         image: "/images/news-3.png",
         category: "Eid Al-adha",
         date: "08-18-2025",
         title: "EID MUBARAK",
         description:
             "Eid Mubarak to you and your Families! The Islamic Association of North America (AINA) wishes to congratulate all Muslims in the United States and around the word on this joyous occassion of...",
-        link: "#",
     },
 ]);
 </script>

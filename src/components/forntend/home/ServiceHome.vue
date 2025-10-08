@@ -5,10 +5,10 @@
                 <h2 class="text-2xl sm:text-4xl font-semibold text-[#3F642E]">Services</h2>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-5">
-                <div v-for="service in services" :key="service.id" class="bg-white text-center shadow-md p-3 rounded dark:bg-slate-950 space-y-5 transition-all duration-500 hover:scale-110 cursor-pointer w-full flex flex-col items-center justify-center">
+                <router-link v-for="service in services" :key="service.id" :to="service.path" class="bg-white text-center shadow-md p-3 rounded dark:bg-slate-950 space-y-5 transition-all duration-500 hover:scale-110 cursor-pointer w-full flex flex-col items-center justify-center">
                     <img :src="service.image" class="mx-auto w-14" :alt="service.title">
                     <h3 class="text-base font-medium text-[#3F642E]">{{ service.title }}</h3>
-                </div>
+                </router-link>
             </div>
             <div class="text-center">
                 <button class="btn bg-[#3F642E] hover:bg-[#B35C2E] px-10 py-1 text-white rounded-full transition-all duration-500 hover:scale-110 cursor-pointer">View More</button>
@@ -40,43 +40,51 @@ const services = [
     {
         id: 1,
         title: "Da'wa Activity",
-        image: "/images/services-2.png"
+        image: "/images/services-2.png",
+        path: "/dawaactivity"
     },
     {
         id: 2,
         title: "IANA Youth Services",
-        image: "/images/services-9.png"
+        image: "/images/services-9.png",
+        path: "/youth-family"
     },
     {
         id: 3,
         title: "Health Awareness",
-        image: "/images/services-8.png"
+        image: "/images/services-8.png",
+        path: "/healthawareness"
     },
     
     {
         id: 4,
         title: "IANA General Assembly",
-        image: "/images/services-4.png"
+        image: "/images/services-4.png",
+        path: "/"
     },
     {
         id: 5,
         title: "Family & Business Counseling",
-        image: "/images/services-7.png"
+        image: "/images/services-7.png",
+        path: "/family-business-counseling"
     },
     {
         id: 6,
         title: "IANA Banquet",
-        image: "/images/services-10.png"
+        image: "/images/services-10.png",
+        path: "/ianaannualbanquet"
     },
     {
         id: 7,
         title: "Civics Engagement",
-        image: "/images/services-6.png"
+        image: "/images/services-6.png",
+        path: "/civicsengagement"
     },
     {
         id: 8,
         title: "Press Release",
-        image: "/images/services-1.png"
+        image: "/images/services-1.png",
+        path: "/pressrelease"
     },
         
 ]

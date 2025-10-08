@@ -98,6 +98,24 @@ const routes = [
         },
       },
       {
+        path: '/announcement/:id',
+        component: () => import('@/pages/forntend/announcements/AnnouncementDetail.vue'),
+        name: 'announcement-detail',
+        meta: {
+          auth: false,
+          title: "Announcement Detail",
+        },
+      },
+      {
+        path: '/events/:id',
+        component: () => import('@/pages/forntend/events/EventsDetails.vue'),
+        name: 'events-detail',
+        meta: {
+          auth: false,
+          title: "Events Detail",
+        },
+      },
+      {
         path: '/covid19',
         component: () => import('@/pages/forntend/covid19/Index.vue'),
         name: 'covid19',
