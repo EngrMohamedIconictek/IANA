@@ -240,7 +240,16 @@ const routes = [
           auth: false,
           title: "Contact Us",
         },
-      }
+      },
+      {
+        path: '/board',
+        component: () => import('@/pages/forntend/board/Index.vue'),
+        name: 'board',
+        meta: {
+          auth: false,
+          title: "Board of Directors",
+        },
+      },
     ]
   },
   {

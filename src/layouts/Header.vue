@@ -135,6 +135,7 @@ function toggleDropdown(menu) {
 
 const aboutLinks = [
     { name: 'Volunteer', path: '/volunteer' },
+    { name: 'Board', path: '/board' },
     { name: 'Membership', path: '/' },
     { name: 'IANA Videos', path: '/iana_videos' }
 ]

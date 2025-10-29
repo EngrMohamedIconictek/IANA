@@ -15,9 +15,11 @@
                         diverse Muslim communities across the country. We are a nationwide umbrella organization with
                         over thirty five centers and organizations. In Minnesota alone, we have about 15 Islamic
                         organizations.</p>
-                    <button
-                        class="btn bg-[#3F642E] hover:bg-[#B35C2E] px-5 py-1 text-white rounded-full transition-all duration-500 hover:scale-110 cursor-pointer">Read
-                        More</button>
+                    <router-link :to="{ name: 'about_us' }">
+                        <button
+                            class="btn bg-[#3F642E] hover:bg-[#B35C2E] px-5 py-1 text-white rounded-full transition-all duration-500 hover:scale-110 cursor-pointer">Read
+                            More</button>
+                    </router-link>
                 </div>
             </div>
         </div>
