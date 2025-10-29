@@ -74,7 +74,7 @@ const teamMembers = ref([
         image: "/images/team-3.png",
         description: "",
         contact: "secretary@iana.org",
-        isClickable: false
+        isClickable: true
     },
     {
         id: 4,
@@ -83,7 +83,7 @@ const teamMembers = ref([
         image: "/images/team-4.png",
         description: "",
         contact: "treasurer@iana.org",
-        isClickable: false
+        isClickable: true
     },
     {
         id: 5,
@@ -92,7 +92,7 @@ const teamMembers = ref([
         image: "/images/team-5.png",
         description: "",
         contact: "treasurer@iana.org",
-        isClickable: false
+        isClickable: true
     },
     {
         id: 6,
